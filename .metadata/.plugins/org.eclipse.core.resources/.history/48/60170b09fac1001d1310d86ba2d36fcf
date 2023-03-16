@@ -1,0 +1,44 @@
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.stream.Stream;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.assertj.core.api.Assertions.assertThatThrownBy;
+class TestDemoTest {
+
+	@BeforeEach
+	void setUp() throws Exception {
+	}
+
+	@ParameterizedTest
+	void assertThatTwoPositiveNumbersAreAddedCorrectly() {
+	
+		int	a;
+		int	b;
+		int	expected;
+		Boolean	expectException;
+
+		if(!expectException) {
+			  assertThat(testDemo.addPositive(a, b)).isEqualTo(expected);
+			}
+
+		else {
+			assertThatThrownBy(() -> 
+		    testDemo.addPositive(a, b))
+		        .isInstanceOf(IllegalArgumentException.class);
+
+		}
+		
+		//fail("Not yet implemented");
+	}
+
+private static Stream argumentsForAddPositive() {
+	return Stream.of();
+}
+	
+	private TestDemo testDemo= new TestDemo();
+}
