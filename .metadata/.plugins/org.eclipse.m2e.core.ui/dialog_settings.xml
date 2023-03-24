@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/Users/pc/Desktop/BE-Promineo-Tech/Week-12-JUnit_Testing/unit-test-assignment"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
